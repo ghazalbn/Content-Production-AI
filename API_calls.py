@@ -5,15 +5,16 @@ from io import BytesIO
 from dotenv import load_dotenv
 import requests
 import logging
+import streamlit as st
 
 
 load_dotenv()
 
-API_KEY = os.getenv("OPENAI_API_KEY")
-MODEL = os.getenv("OPENAI_MODEL")
+# API_KEY = os.getenv("OPENAI_API_KEY")
+# MODEL = os.getenv("OPENAI_MODEL")
 
-# API_KEY = st.secrets.get("OPENAI_API_KEY")
-# MODEL = st.secrets.get("OPENAI_MODEL")
+API_KEY = st.secrets.get("OPENAI_API_KEY")
+MODEL = st.secrets.get("OPENAI_MODEL")
 
 # Function to save the generated article to a PDF file with Persian text support
 def save_article_to_pdf(article_text, filename="generated_article.pdf"):
