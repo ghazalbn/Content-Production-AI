@@ -15,10 +15,10 @@ load_dotenv()
 
 class DatabaseManager:
     def __init__(self):
-        self.server = os.getenv("DB_SERVER")
-        self.database = os.getenv("DB_NAME")
-        self.username = os.getenv("DB_USERNAME")
-        self.password = os.getenv("DB_PASSWORD")
+        self.server = st.secrets.get("DB_SERVER")
+        self.database = st.secrets.get("DB_NAME")
+        self.username = st.secrets.get("DB_USERNAME")
+        self.password = st.secrets.get("DB_PASSWORD")
         self.conn = None
         self.cursor = None
 
