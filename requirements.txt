@@ -1,3 +1,5 @@
+gitdb==4.0.11
+smmap==5.0.1
 altair==5.4.1
 annotated-types==0.7.0
 anyio==4.4.0
@@ -136,3 +138,4 @@ websocket-client==1.8.0
 wsproto==1.2.0
 zipp==3.20.1
 zope.interface==7.0.3
+pymssql==2.3.1

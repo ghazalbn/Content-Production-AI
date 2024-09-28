@@ -5,6 +5,7 @@ from io import BytesIO
 from dotenv import load_dotenv
 import requests
 import logging
+import streamlit as st
 
 
 load_dotenv()
