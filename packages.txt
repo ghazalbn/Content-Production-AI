@@ -1,0 +1,4 @@
+# ODBC Driver 17 dependencies
+unixodbc
+unixodbc-dev
+msodbcsql17
